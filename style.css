@@ -1,0 +1,69 @@
+.modal {
+  font-family: "Courier New", Courier, monospace;
+  position: relative;
+  display: none;
+  text-align: center;
+  width: 600px;
+  height: 300px;
+  background-color: azure;
+  box-shadow: 10px 10px 10px 10px #ccc;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 100px auto;
+}
+.modal .close {
+  position: absolute;
+  right: 3px;
+  top: 2px;
+  cursor: pointer;
+}
+.modal i {
+  font-size: 30px;
+  color: #66bfe0;
+}
+.modal .title {
+  color: darkcyan;
+}
+.modal .desc {
+  color: coral;
+}
+.modal .lightbox {
+  margin-right: auto;
+  margin-left: auto;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal .sub-title {
+  color: darkgray;
+}
+.modal .link {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: linear-gradient(
+      90deg,
+      var(--c1, #0093e9),
+      var(--c2, #80d0c7),
+      var(--c1, #0093e9)
+    )
+    var(--x, 0) / 200%;
+  transition: all 0.5s;
+}
+.link-1 {
+  --c1: #0093e9;
+  --c2: #80d0c7;
+}
+.link-2 {
+  --c1: #df618b;
+  --c2: #66bfe0;
+}
+.link-3 {
+  --c1: #245f09;
+  --c2: #dcded0;
+}
+.modal .link:hover {
+  --x: 100%;
+}
